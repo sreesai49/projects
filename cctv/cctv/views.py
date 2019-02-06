@@ -1,5 +1,7 @@
 from django.http import HttpResponse
 from django.shortcuts import render
+from .forms import *
 
 def home(request):
-    return render(request, 'home.html')
+    context = {'form':contactUsForm}
+    return render(request, 'home.html', context)

@@ -91,15 +91,13 @@
 
                 </div>
                 <div>
-                    <form>
-                        <input class="inputs" type="text" placeholder="Name"/><br><br>
-                        <input class="inputs" type="email" placeholder="Email"/><br><br>
-                        <input class="inputs" type="text" placeholder="Subject"/><br><br>
-                        <textarea placeholder="Message" rows="8" cols="50"></textarea><br><br>
-                        <div class="align"><button class="button" type="submit">Submit</button></div>
+                    <form class="form-control">
+                      {% for field in form %}
+                      {{field}}<br><br>
+                      {% endfor %}
+                      <div class="align"><button class="button" type="submit">Submit</button></div>
                     </form>
                 </div>
-
         </div><br>
         <div class="pad monoFont">© 2023 by Personal Life Coach.</div><br><br>
     </div>
