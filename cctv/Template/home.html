@@ -1,0 +1,108 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="{% static 'css/camStyles.css' %}">
+</head>
+<body>
+    <!--Header-->
+    <div class="firstDiv">
+    <div class="flexContainer">
+        <div class="flexChild">
+            <div class="mainHead">ALLAN JOHNSON</div>
+            <div class="font">Personal Life Coach</div>
+        </div>
+        <div class="mainDiv flexChild">
+            <ul class="navBar">
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#" class="active">Home</a></li>
+
+            </ul>
+        </div>
+    </div>
+    </div>
+<!--body-->
+<div class="contentDiv">
+    <div class="imgDiv">
+        <div class="amb">AMBITION IS THE FIRST STEP TOWARDS</div>
+        <div class="success">SUCCESS</div><br>
+        <center><button class="button" type="submit">Book Now</button></center>
+        <div class="empty"></div>
+    </div>
+    <div class="flexContainer">
+        <div class="flexChild">
+            <h4 class="aboutme">ABOUT ME</h4>
+            <p class="aboutP">I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page.</p> ​
+            <p class="aboutP">This is a great space to write long text about your company and your services. You can use this space to go into a little more detail about your company. Talk about your team and what services you provide.</p><br>
+            <center><button class="button" type="submit">Read More</button></center>
+        </div>
+        <div class="flexChild"  id="imgProp">
+            <img src="{% static 'images/download.jpg' %}" class="imgProp1" alt="Happy young businessman"/>
+        </div>
+    </div>
+    <div class="imgDiv1">
+        <div class="one1">
+            <div class="one">HOW I CAN</div>
+            <div class="one">HELP YOU</div>
+        </div>
+        <center>
+        <div class="bottomFlex">
+            <div class="bottomFlexChild">
+                <div class="mainHead">SELF-IMPROVEMENT</div>
+                <div class="fontFamily padding">45 min | $90.00</div>
+            </div>
+            <div class="bottomFlexChild">
+                <p class="fontFamily letterSpacing">Describe your service here. What makes it great? Use short catchy text to tell people what you offer, and the benefits they will receive. A great description gets readers...</p>
+                <center><button type="submit" class="button1">Book It</button></center>
+            </div>
+
+        </div>
+        <div class="serviceButton"><button type="submit" class="button width">More Services</button></div>
+        </center>
+    </div>
+    </div>
+    <!--Footer-->
+    <div class="footer">
+        <div class="footFlex">
+                <div class="footFlexChild">
+                    <div class="mainHead pad">CONTACT</div>
+                    <div class="pad monoFont">
+                        <p><span>500 Terry Francois Street</span></p>
+                        <p><span>San Francisco, CA 94158</span></p>
+                    </div>
+                    <div class="pad monoFont">
+                        <p><span>Tel: 123-456-7890</span></p>
+                        <p><span>Fax: 123-456-7890</span></p>
+                    </div>
+                    <div class="pad monoFont">
+                        <p><span>Tel: 123-456-7890</span></p>
+                    </div>
+                    <a class="pad monoFont" href="mailto:info@mysite.com">info@mysite.com</a><br><br>
+                    <div class="pad">
+                        <a href="http://www.facebook.com/"><img src="{% static 'images/fb.webp' %}"/ alt="Facebook icon"></a>
+                        <a href="http://www.twitter.com/"><img src="{% static 'images/twitter.webp' %}"/ alt="Twitter icon"></a>
+                        <a href="https://instagram.com//"><img src="{% static 'images/instagram.webp' %}"/ alt="Instagram icon"></a>
+                        <a href="https://www.youtube.com/"><img src="{% static 'images/youtube.webp' %}"/ alt="YouTube icon"></a>
+                    </div>
+
+                </div>
+                <div>
+                    <form>
+                        <input class="inputs" type="text" placeholder="Name"/><br><br>
+                        <input class="inputs" type="email" placeholder="Email"/><br><br>
+                        <input class="inputs" type="text" placeholder="Subject"/><br><br>
+                        <textarea placeholder="Message" rows="8" cols="50"></textarea><br><br>
+                        <div class="align"><button class="button" type="submit">Submit</button></div>
+                    </form>
+                </div>
+
+        </div><br>
+        <div class="pad monoFont">© 2023 by Personal Life Coach.</div><br><br>
+    </div>
+
+</body>
+</html>

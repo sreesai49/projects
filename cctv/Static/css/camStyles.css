@@ -1,0 +1,224 @@
+body{
+    font-family: sans-serif;
+    margin: 0px;
+}
+
+.navBar{
+    list-style-type: none;
+    padding-right: 100px;
+    overflow: hidden;
+}
+.navBar a{
+    float: right;
+    display: block;
+    padding:20px;
+    text-align: center;
+    text-decoration: none;
+    color:black;
+}
+.navBar a:hover,active{
+    color:rgb(135, 213, 250);
+}
+.mainDiv{
+
+    line-height: 50px;
+}
+.flexContainer{
+    display:flex;
+    flex-wrap: nowrap;
+    background-color: white;
+    width: 100%;
+    top: 0;
+  left: 0;
+
+}
+
+
+.position{
+    position: fixed;
+}
+.flexContainer .flexChild{
+    width:50%;
+    margin: 10px;
+    text-align: center;
+    background-color: white;
+}
+.mainHead{
+    padding-top: 40px;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+}
+.font{
+    font-family: monospace;
+    letter-spacing: 0.18em;
+}
+.fontFamily{
+    font-family: sans-serif;
+}
+.monoFont{
+    font-family: monospace;
+    font-size: 15px;
+}
+.letterSpacing{
+    letter-spacing: 1px;
+}
+.imgDiv{
+    background-image: url(../images/cctv-for-business.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width:100%;
+    height: 100%;
+}
+.imgDiv1{
+    background-image: url(../images/network-cctv-camera.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width:100%;
+    height: 100%;
+}
+
+.success{
+    font-size: 110px;
+    font-family: sans-serif;
+    text-align: center;
+    font-weight: 900;
+    letter-spacing: 0.18em;
+}
+.amb{
+    font-size: 17px;
+    letter-spacing: 0.18em;
+    text-align: center;
+}
+.button{
+    height: 40px;
+    width:150px;
+    background-color: black;
+    color: white;
+    border: black;
+    text-align: center;
+    align-self: center;
+    font-family: monospace;
+    font-size: 15px;
+    letter-spacing: 0.02em;
+}
+.align{
+    float: right;
+    padding-right: 0px;
+}
+.button:hover{
+    color:black;
+    background-color: inherit;
+    border:2px solid black;
+}
+.button1{
+    background-color: rgb(34, 199, 199);
+    color: white;
+    border: 2px solid rgb(34, 199, 199);
+    border-radius: 1px;
+    height: 40px;
+    width:100px;
+}
+.button1:hover{
+    background-color: rgb(16, 153, 153);
+    border: 2px solid rgb(16, 153, 153);
+}
+.empty{
+    height: 350px;
+}
+.aboutme{
+    font-size: 45px;
+    line-height: 0.2em;
+}
+.aboutP{
+    display: inline-block;
+    letter-spacing: 0.14em;
+    font-size: 14px;
+    text-align: start;
+    padding-left: 200px;
+}
+.fontSize{
+    letter-spacing: 0.14em;
+    font-size: 14px;
+}
+.padding{
+    padding: 10px;
+}
+#imgProp{
+    margin: 0px;
+
+}
+.imgProp1{
+    height: 100%;
+    width:100%;
+}
+.one{
+    letter-spacing:0.1em;
+    line-height: 1.2em;
+    font-size: 42px;
+    text-align: left;
+    font-weight: 900;
+
+}
+.one1{
+    padding-left: 200px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.bottomFlex{
+    display:flex;
+    align-items: center;
+    width: 70%;
+    background-color: white;
+    height: 400px;
+}
+.bottomFlexChild{
+    width: 50%;
+    padding: 20px;
+    border-left: 1px solid darkgrey;
+}
+.serviceButton{
+    padding-top: 70px;
+    padding-bottom: 150px;
+}
+.footer{
+    padding: 0px;
+    margin: 0px;
+    background-color: #00cccc;
+}
+.footFlex{
+    display:flex;
+    background-color: #00cccc;
+    width:100%;
+
+}
+.footFlexChild{
+    width:50%;
+
+}
+.inputs{
+    width:100%;
+    height: 30px;
+    background-color: #00cccc;
+    border:2px solid black;
+}
+textarea{
+    width:100%;
+    background-color: #00cccc;
+    border:2px solid black;
+}
+.inputs:hover,textarea:hover{
+    background-color: #009999;
+}
+
+form{
+    padding-top: 100px;
+    padding-left: 0px;
+    width:100%;
+}
+.pad{
+    padding-left: 25%;
+    padding-bottom: 1px;
+}
