@@ -1,8 +1,26 @@
+@media only screen and (max-width: 360px) {
+    .flexChild{
+        width:100% !important;
+        text-align: center;
+    }
+    .media1{
+        flex-direction: row;
+    }
+    .mainDiv{
+        width: 0px;
+        display: none;
+    }
+    .navBar{
+        padding-right: 0px;
+    }
+  }
 body{
     font-family: sans-serif;
     margin: 0px;
 }
-
+.svg{
+    
+}
 .navBar{
     list-style-type: none;
     padding-right: 100px;
@@ -38,9 +56,10 @@ body{
 .position{
     position: fixed;
 }
-.flexContainer .flexChild{
+.flexChild{
     width:50%;
     margin: 10px;
+    
     text-align: center;
     background-color: white;
 }
@@ -127,6 +146,9 @@ body{
     border: 2px solid rgb(16, 153, 153);
 }
 .empty{
+    height: 350px;
+}
+.empty1{
     height: 350px;
 }
 .aboutme{
