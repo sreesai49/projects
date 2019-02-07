@@ -1,22 +1,124 @@
 @media only screen and (max-width: 360px) {
     .flexChild{
         width:100% !important;
-        text-align: center;
-    }
-    .media1{
-        flex-direction: row;
     }
     .mainDiv{
-        width: 0px;
         display: none;
     }
-    .navBar{
-        padding-right: 0px;
+    .contentDiv{
+        width: 730px;
     }
+    .flexContainer{
+        flex-direction: column;
+    }
+    .flexChild{
+        width:100%;
+    }
+    .bottomFlex{
+        flex-direction: column;
+        width: 100% !important;
+        height: 900px !important;
+    }
+    .bottomFlexChild{
+        width: 100%;
+        padding: 20px;
+        border-left: 0px !important;
+    }
+    .one{
+        font-size: 60px !important;
+    }
+    .one1{
+        padding-left: 50px !important;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    .imgDiv1{
+        background-image: none !important;
+    }
+    .mainHead{
+        font-weight: 800 !important;
+        font-size: 35px !important;
+    }
+    .letterSpacing{
+        font-family: unset !important;
+        font-size: 30px;
+    }
+    .aboutme {
+        padding-left: 50px !important;
+    }
+    .aboutP {
+        letter-spacing: 0.1em !important;
+        font-size: 26px !important;
+        padding-left: 50px !important;
+        padding-right: 50px;
+        line-height: 1.6;
+    }
+    .button{
+        font-size: 30px !important;
+        height: 80px !important;
+        width: 50% !important;
+    }.button1{
+        border-radius: 3px !important;
+        height: 90px !important;
+        width: 250px !important;
+        font-size: 30px !important;
+    }
+    .footer{
+        width: 750px;
+    }
+    .footFlex{
+        flex-flow: column;
+    }
+    .footFlexChild {
+        width: 100% !important;
+    }
+    .pad {
+        padding-left: 50px !important;
+    }
+    .monoFont {
+        font-size: 30px !important;
+    }
+    .icon{
+        width: 60px;
+        height: 50px;
+    }
+    form {
+        padding-top: 50px !important;
+        padding-left: 50px !important;
+        padding-right: 50px;
+        width: 85% !important;
+    }
+    .inputs,textarea {
+        height: 70px !important;
+        border: 5px solid black !important;
+        font-size: xx-large;
+        padding-left: 10px;
+    }
+    .button2{
+        font-size: 30px !important;
+        height: 80px !important;
+        width: 103% !important;
+    }
+    .align{
+        float: inherit !important;
+    }
+    .amb {
+        font-size: 30px !important;
+    }
+    .success {
+        font-size: 100px !important;
+    }
+    .font {
+        font-size: 28px;
+    }
+    
   }
 body{
     font-family: sans-serif;
     margin: 0px;
+}
+.contentDiv{
+    width:100%;
 }
 .svg{
     
@@ -144,6 +246,11 @@ body{
 .button1:hover{
     background-color: rgb(16, 153, 153);
     border: 2px solid rgb(16, 153, 153);
+}
+.button2:hover{
+    color:black;
+    background-color: inherit;
+    border:2px solid black;
 }
 .empty{
     height: 350px;

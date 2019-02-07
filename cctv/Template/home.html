@@ -8,7 +8,7 @@
     <!--Header-->
     <div>
     <div class="flexContainer position">
-        <div class="flexChild media1">
+        <div class="flexChild">
             <div class="mainHead">ALLAN JOHNSON</div>
             <div class="font">Personal Life Coach</div>
         </div>
@@ -32,7 +32,7 @@
 <!--body-->
 <div class="contentDiv">
     <div class="imgDiv">
-        <div class="empty1"></div>
+        <div class="empty"></div>
         <div class="amb">AMBITION IS THE FIRST STEP TOWARDS</div>
         <div class="success">SUCCESS</div><br>
         <center><button class="button" type="submit">Book Now</button></center>
@@ -40,7 +40,7 @@
     </div>
     <div class="flexContainer">
         <div class="flexChild">
-            <h4 class="aboutme">ABOUT ME</h4>
+            <h4 class="aboutme one">ABOUT ME</h4>
             <p class="aboutP">I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page.</p> ​
             <p class="aboutP">This is a great space to write long text about your company and your services. You can use this space to go into a little more detail about your company. Talk about your team and what services you provide.</p><br>
             <center><button class="button" type="submit">Read More</button></center>
@@ -58,7 +58,7 @@
         <div class="bottomFlex">
             <div class="bottomFlexChild">
                 <div class="mainHead">SELF-IMPROVEMENT</div>
-                <div class="fontFamily padding">45 min | $90.00</div>
+                <div class="fontFamily padding letterSpacing">45 min | $90.00</div>
             </div>
             <div class="bottomFlexChild">
                 <p class="fontFamily letterSpacing">Describe your service here. What makes it great? Use short catchy text to tell people what you offer, and the benefits they will receive. A great description gets readers...</p>
@@ -66,7 +66,7 @@
             </div>
 
         </div>
-        <div class="serviceButton"><button type="submit" class="button width">More Services</button></div>
+        <div class="serviceButton"><button type="submit" class="button">More Services</button></div>
         </center>
     </div>
     </div>
@@ -88,10 +88,10 @@
                     </div>
                     <a class="pad monoFont" href="mailto:info@mysite.com">info@mysite.com</a><br><br>
                     <div class="pad">
-                        <a href="http://www.facebook.com/"><img src="{% static 'images/fb.webp' %}"/ alt="Facebook icon"></a>
-                        <a href="http://www.twitter.com/"><img src="{% static 'images/twitter.webp' %}"/ alt="Twitter icon"></a>
-                        <a href="https://instagram.com//"><img src="{% static 'images/instagram.webp' %}"/ alt="Instagram icon"></a>
-                        <a href="https://www.youtube.com/"><img src="{% static 'images/youtube.webp' %}"/ alt="YouTube icon"></a>
+                        <a href="http://www.facebook.com/"><img src="{% static 'images/fb.webp' %}" class="icon" alt="Facebook icon"></a>&nbsp;&nbsp;&nbsp;
+                        <a href="http://www.twitter.com/"><img src="{% static 'images/twitter.webp' %}" class="icon" alt="Twitter icon"></a>&nbsp;&nbsp;&nbsp;
+                        <a href="https://instagram.com//"><img src="{% static 'images/instagram.webp' %}" class="icon" alt="Instagram icon"></a>&nbsp;&nbsp;&nbsp;
+                        <a href="https://www.youtube.com/"><img src="{% static 'images/youtube.webp' %}" class="icon" alt="YouTube icon"></a>
                     </div>
 
                 </div>
@@ -100,7 +100,7 @@
                       {% for field in form %}
                       {{field}}<br><br>
                       {% endfor %}
-                      <div class="align"><button class="button" type="submit">Submit</button></div>
+                      <div class="align"><button class="button2" type="submit">Submit</button></div>
                     </form>
                 </div>
         </div><br>
