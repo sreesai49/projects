@@ -6,7 +6,7 @@
         display: none;
     }
     .contentDiv{
-        width: 730px;
+        width: 730px !important;
     }
     .flexContainer{
         flex-direction: column;
@@ -131,7 +131,8 @@ body{
 .navBar a{
     float: right;
     display: block;
-    padding:20px;
+    padding-left: 20px;
+    padding-right: 20px;
     text-align: center;
     text-decoration: none;
     color:black;
@@ -150,23 +151,22 @@ body{
     width: 100%;
     top: 0;
     left: 0;
-    height: 100px;
 }
 
 
 
 .position{
     position: fixed;
+    height: 100px;
 }
 .flexChild{
     width:50%;
     margin: 10px;
-    
     text-align: center;
     background-color: white;
 }
 .mainHead{
-    padding-top: 40px;
+    padding-top: 20px;
     font-size: 18px;
     font-weight: 700;
     letter-spacing: 0.18em;
@@ -214,7 +214,7 @@ body{
     letter-spacing: 0.18em;
     text-align: center;
 }
-.button{
+.button, .button2{
     height: 40px;
     width:150px;
     background-color: black;
@@ -247,6 +247,7 @@ body{
     background-color: rgb(16, 153, 153);
     border: 2px solid rgb(16, 153, 153);
 }
+
 .button2:hover{
     color:black;
     background-color: inherit;
@@ -261,6 +262,7 @@ body{
 .aboutme{
     font-size: 45px;
     line-height: 0.2em;
+    padding-left: 200px;
 }
 .aboutP{
     display: inline-block;
