@@ -1,6 +1,6 @@
-from django.contrib import models
+from django.db import models
 
-def contact_us(models.Model):
+class contact_us(models.Model):
     name = models.CharField(max_length=50)
     mobile = models.CharField(max_length=10)
     email = models.CharField(max_length=50)

@@ -14,10 +14,10 @@
         </div>
         <div class="mainDiv flexChild">
             <ul class="navBar">
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <!--<li><a href="#">Blog</a></li>-->
+                <li><a href="#services">Services</a></li>
+                <li><a href="#aboutme">About</a></li>
                 <li><a href="#" class="active">Home</a></li>
 
             </ul>
@@ -28,23 +28,34 @@
 <div class="contentDiv">
     <div class="imgDiv">
         <div class="empty"></div>
+<<<<<<< HEAD
         <div class="amb">AMBITION IS THE FIRST STEP TOWARDS</div>
+=======
+        <br>
+>>>>>>> Updated latest code
         <div class="success">SUCCESS</div><br>
-        <center><button class="button" type="submit">Book Now</button></center>
+        <div class="amb"><strong>KEEP AN EYE ON YOUR HOME OR BUSINESS</strong></div>
+        <div class="amb"><strong>VIA SMART PHONE, TABLET OR PC</strong></div>
+        <br>
+        <center><button onclick="location.href='#contact';" class="button" type="submit">Get Free Quote</button></center>
         <div class="empty"></div>
     </div>
     <div class="flexContainer">
         <div class="flexChild">
+<<<<<<< HEAD
             <h4 class="aboutme one">ABOUT ME</h4>
+=======
+            <h4 class="aboutme one" id="aboutme">ABOUT ME</h4>
+>>>>>>> Updated latest code
             <p class="aboutP">I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page.</p> ​
             <p class="aboutP">This is a great space to write long text about your company and your services. You can use this space to go into a little more detail about your company. Talk about your team and what services you provide.</p><br>
             <center><button class="button" type="submit">Read More</button></center>
         </div>
         <div class="flexChild"  id="imgProp">
-            <img src="{% static 'images/download.jpg' %}" class="imgProp1" alt="Happy young businessman"/>
+            <img src="{% static 'images/businessman.png' %}" class="imgProp1" alt="Happy young businessman"/>
         </div>
     </div>
-    <div class="imgDiv1">
+    <div class="imgDiv1" id="services">
         <div class="one1">
             <div class="one">HOW I CAN</div>
             <div class="one">HELP YOU</div>
@@ -75,31 +86,57 @@
                         <p><span>San Francisco, CA 94158</span></p>
                     </div>
                     <div class="pad monoFont">
-                        <p><span>Tel: 123-456-7890</span></p>
-                        <p><span>Fax: 123-456-7890</span></p>
+                        <p><span>Tel: </span></p>
                     </div>
                     <div class="pad monoFont">
-                        <p><span>Tel: 123-456-7890</span></p>
+                        <p><span>Mobile: 123-456-7890</span></p>
                     </div>
-                    <a class="pad monoFont" href="mailto:info@mysite.com">info@mysite.com</a><br><br>
+                    <a class="pad monoFont" href="mailto:info@ayyappacctv.com">info@ayyappacctv.com</a><br><br>
                     <div class="pad">
+<<<<<<< HEAD
                         <a href="http://www.facebook.com/"><img src="{% static 'images/fb.webp' %}" class="icon" alt="Facebook icon"></a>&nbsp;&nbsp;&nbsp;
                         <a href="http://www.twitter.com/"><img src="{% static 'images/twitter.webp' %}" class="icon" alt="Twitter icon"></a>&nbsp;&nbsp;&nbsp;
                         <a href="https://instagram.com//"><img src="{% static 'images/instagram.webp' %}" class="icon" alt="Instagram icon"></a>&nbsp;&nbsp;&nbsp;
                         <a href="https://www.youtube.com/"><img src="{% static 'images/youtube.webp' %}" class="icon" alt="YouTube icon"></a>
+=======
+                        <a href="http://www.facebook.com/wix"><img src="{% static 'images/fb.webp' %}" class="icon" alt="Facebook icon"></a>&nbsp;&nbsp;&nbsp;
+                        <a href="http://www.twitter.com/wix"><img src="{% static 'images/twitter.webp' %}" class="icon" alt="Twitter icon"></a>&nbsp;&nbsp;&nbsp;
+                        <a href="https://instagram.com/wix/"><img src="{% static 'images/instagram.webp' %}" class="icon" alt="Instagram icon"></a>&nbsp;&nbsp;&nbsp;
+                        <a href="https://www.youtube.com/user/Wix"><img src="{% static 'images/youtube.webp' %}" class="icon" alt="YouTube icon"></a>
+>>>>>>> Updated latest code
                     </div>
-
                 </div>
                 <div>
-                    <form class="form-control">
+                    <form action="{% url 'homeapp:contact' %}" class="form-control" id="contact" method="POST">
+                      {% csrf_token %}
                       {% for field in form %}
                       {{field}}<br><br>
                       {% endfor %}
+<<<<<<< HEAD
                       <div class="align"><button class="button2" type="submit">Submit</button></div>
+=======
+
+                      <div>
+                        {% for message in messages %}
+                          <div >
+                            {{ message }}
+                          </div>
+                        {% endfor %}
+                      </div>
+                      <div class="align"><button class="button2" type="submit">Submit</button>
+                        <style>
+                          .align{
+                            padding-right: 50px;
+                          }
+                          .button2{border-radius: 8px 8px 8px 8px;}
+                        </style>
+                      </div>
+>>>>>>> Updated latest code
                     </form>
                 </div>
+
         </div><br>
-        <div class="pad monoFont">© 2023 by Personal Life Coach.</div><br><br>
+        <div class="pad monoFont">©2023 by Ayyappa cctv Business.</div><br><br>
     </div>
 
 </body>

@@ -6,7 +6,11 @@
         display: none;
     }
     .contentDiv{
+<<<<<<< HEAD
         width: 730px !important;
+=======
+        width: 730px;
+>>>>>>> Updated latest code
     }
     .flexContainer{
         flex-direction: column;
@@ -111,7 +115,11 @@
     .font {
         font-size: 28px;
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> Updated latest code
   }
 body{
     font-family: sans-serif;
@@ -144,17 +152,25 @@ body{
 
     line-height: 50px;
 }
+.button, .button2{
+  cursor: pointer;
+}
 .flexContainer{
     display:flex;
     flex-wrap: nowrap;
     background-color: white;
     width: 100%;
     top: 0;
+<<<<<<< HEAD
     left: 0;
 }
 
 
+=======
+  left: 0;
+>>>>>>> Updated latest code
 
+}
 .position{
     position: fixed;
     height: 100px;
@@ -226,6 +242,18 @@ body{
     font-size: 15px;
     letter-spacing: 0.02em;
 }
+.button2{
+    height: 40px;
+    width:150px;
+    background-color: black;
+    color: white;
+    border: black;
+    text-align: center;
+    align-self: center;
+    font-family: monospace;
+    font-size: 15px;
+    letter-spacing: 0.02em;
+}
 .align{
     float: right;
     padding-right: 0px;
@@ -248,11 +276,14 @@ body{
     border: 2px solid rgb(16, 153, 153);
 }
 
+<<<<<<< HEAD
 .button2:hover{
     color:black;
     background-color: inherit;
     border:2px solid black;
 }
+=======
+>>>>>>> Updated latest code
 .empty{
     height: 350px;
 }
@@ -260,8 +291,11 @@ body{
     height: 350px;
 }
 .aboutme{
+<<<<<<< HEAD
     font-size: 45px;
     line-height: 0.2em;
+=======
+>>>>>>> Updated latest code
     padding-left: 200px;
 }
 .aboutP{
@@ -292,7 +326,6 @@ body{
     font-size: 42px;
     text-align: left;
     font-weight: 900;
-
 }
 .one1{
     padding-left: 200px;
@@ -336,13 +369,36 @@ body{
     background-color: #00cccc;
     border:2px solid black;
 }
+.form-control{
+  padding-left: 100px;
+}
+.input-style{
+  border-radius: 8px 8px 8px 8px;
+  font: normal normal normal 15px/1.4em futura-lt-w01-light,sans-serif;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border-width: 0px;
+  background-color: rgba(239, 240, 246, 1);
+  box-sizing: border-box !important;
+  color: #7387E8;
+  border-style: solid;
+  border-color: rgba(239, 240, 246, 1);
+  padding: 3px;
+  margin: 0px;
+  max-width: 90%;
+  height: 35px;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+  text-overflow: ellipsis;
+}
 textarea{
     width:100%;
     background-color: #00cccc;
     border:2px solid black;
 }
 .inputs:hover,textarea:hover{
-    background-color: #009999;
+    background-color: #c9e2e2;
 }
 
 form{
