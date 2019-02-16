@@ -6,7 +6,7 @@
         display: none;
     }
     .contentDiv{
-        width: 730px !important;
+        width: 730px;
     }
     .flexContainer{
         flex-direction: column;
@@ -238,6 +238,18 @@ body{
     font-size: 15px;
     letter-spacing: 0.02em;
 }
+.button2{
+    height: 40px;
+    width:150px;
+    background-color: black;
+    color: white;
+    border: black;
+    text-align: center;
+    align-self: center;
+    font-family: monospace;
+    font-size: 15px;
+    letter-spacing: 0.02em;
+}
 .align{
     float: right;
     padding-right: 0px;
@@ -260,6 +272,7 @@ body{
     border: 2px solid rgb(16, 153, 153);
 }
 
+
 .button2:hover{
     color:black;
     background-color: inherit;
@@ -274,6 +287,7 @@ body{
 .aboutme{
     font-size: 45px;
     line-height: 0.2em;
+
     padding-left: 200px;
 }
 .aboutP{
