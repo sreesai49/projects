@@ -6,11 +6,7 @@
         display: none;
     }
     .contentDiv{
-<<<<<<< HEAD
         width: 730px !important;
-=======
-        width: 730px;
->>>>>>> Updated latest code
     }
     .flexContainer{
         flex-direction: column;
@@ -115,11 +111,6 @@
     .font {
         font-size: 28px;
     }
-<<<<<<< HEAD
-    
-=======
-
->>>>>>> Updated latest code
   }
 body{
     font-family: sans-serif;
@@ -129,7 +120,7 @@ body{
     width:100%;
 }
 .svg{
-    
+
 }
 .navBar{
     list-style-type: none;
@@ -161,16 +152,9 @@ body{
     background-color: white;
     width: 100%;
     top: 0;
-<<<<<<< HEAD
     left: 0;
 }
 
-
-=======
-  left: 0;
->>>>>>> Updated latest code
-
-}
 .position{
     position: fixed;
     height: 100px;
@@ -276,14 +260,11 @@ body{
     border: 2px solid rgb(16, 153, 153);
 }
 
-<<<<<<< HEAD
 .button2:hover{
     color:black;
     background-color: inherit;
     border:2px solid black;
 }
-=======
->>>>>>> Updated latest code
 .empty{
     height: 350px;
 }
@@ -291,11 +272,8 @@ body{
     height: 350px;
 }
 .aboutme{
-<<<<<<< HEAD
     font-size: 45px;
     line-height: 0.2em;
-=======
->>>>>>> Updated latest code
     padding-left: 200px;
 }
 .aboutP{

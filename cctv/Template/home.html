@@ -1,8 +1,9 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="../Static/css/camStyles.css">
+<link rel="stylesheet" type="text/css" href="{% static 'css/camStyles.css' %}">
 </head>
 <body>
     <!--Header-->
@@ -28,11 +29,8 @@
 <div class="contentDiv">
     <div class="imgDiv">
         <div class="empty"></div>
-<<<<<<< HEAD
-        <div class="amb">AMBITION IS THE FIRST STEP TOWARDS</div>
-=======
+
         <br>
->>>>>>> Updated latest code
         <div class="success">SUCCESS</div><br>
         <div class="amb"><strong>KEEP AN EYE ON YOUR HOME OR BUSINESS</strong></div>
         <div class="amb"><strong>VIA SMART PHONE, TABLET OR PC</strong></div>
@@ -42,11 +40,7 @@
     </div>
     <div class="flexContainer">
         <div class="flexChild">
-<<<<<<< HEAD
-            <h4 class="aboutme one">ABOUT ME</h4>
-=======
             <h4 class="aboutme one" id="aboutme">ABOUT ME</h4>
->>>>>>> Updated latest code
             <p class="aboutP">I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page.</p> ​
             <p class="aboutP">This is a great space to write long text about your company and your services. You can use this space to go into a little more detail about your company. Talk about your team and what services you provide.</p><br>
             <center><button class="button" type="submit">Read More</button></center>
@@ -93,17 +87,10 @@
                     </div>
                     <a class="pad monoFont" href="mailto:info@ayyappacctv.com">info@ayyappacctv.com</a><br><br>
                     <div class="pad">
-<<<<<<< HEAD
                         <a href="http://www.facebook.com/"><img src="{% static 'images/fb.webp' %}" class="icon" alt="Facebook icon"></a>&nbsp;&nbsp;&nbsp;
                         <a href="http://www.twitter.com/"><img src="{% static 'images/twitter.webp' %}" class="icon" alt="Twitter icon"></a>&nbsp;&nbsp;&nbsp;
                         <a href="https://instagram.com//"><img src="{% static 'images/instagram.webp' %}" class="icon" alt="Instagram icon"></a>&nbsp;&nbsp;&nbsp;
                         <a href="https://www.youtube.com/"><img src="{% static 'images/youtube.webp' %}" class="icon" alt="YouTube icon"></a>
-=======
-                        <a href="http://www.facebook.com/wix"><img src="{% static 'images/fb.webp' %}" class="icon" alt="Facebook icon"></a>&nbsp;&nbsp;&nbsp;
-                        <a href="http://www.twitter.com/wix"><img src="{% static 'images/twitter.webp' %}" class="icon" alt="Twitter icon"></a>&nbsp;&nbsp;&nbsp;
-                        <a href="https://instagram.com/wix/"><img src="{% static 'images/instagram.webp' %}" class="icon" alt="Instagram icon"></a>&nbsp;&nbsp;&nbsp;
-                        <a href="https://www.youtube.com/user/Wix"><img src="{% static 'images/youtube.webp' %}" class="icon" alt="YouTube icon"></a>
->>>>>>> Updated latest code
                     </div>
                 </div>
                 <div>
@@ -112,9 +99,6 @@
                       {% for field in form %}
                       {{field}}<br><br>
                       {% endfor %}
-<<<<<<< HEAD
-                      <div class="align"><button class="button2" type="submit">Submit</button></div>
-=======
 
                       <div>
                         {% for message in messages %}
@@ -131,7 +115,6 @@
                           .button2{border-radius: 8px 8px 8px 8px;}
                         </style>
                       </div>
->>>>>>> Updated latest code
                     </form>
                 </div>
 

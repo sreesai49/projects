@@ -2,7 +2,7 @@ from django import forms
 
 class contactUsForm(forms.Form):
     name = forms.CharField(max_length=50, label="")
-    mobile = forms.CharField(max_length=10, label="")
+    mobile = forms.IntegerField(label="")
     email = forms.CharField(max_length=50, label="")
     subject = forms.CharField(max_length=150, label="")
     message = forms.CharField(max_length=250, widget=forms.Textarea, label="")
