@@ -1,0 +1,18 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" type="image/png" href="{% static 'images/favicon.png' %}">
+    <title>Messanger - Website</title>
+    <header>
+      <a href="{% url 'homeurls:home' %}">Home</a>
+      <a href="{% url 'homeurls:aboutus' %}">About Us</a>
+      <a href="{% url 'accounturls:login' %}">Login</a>
+    </header>
+  </head>
+  <body>
+    {% block body %}
+    {% endblock %}
+  </body>
+</html>
