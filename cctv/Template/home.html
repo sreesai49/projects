@@ -4,18 +4,21 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="{% static 'css/camStyles.css' %}">
+<script type="text/javascript">
+  $(.navBar).localScroll();
+</script>
 </head>
 <body>
     <!--Header-->
     <div>
     <div class="flexContainer position">
         <div class="flexChild">
-            <div class="mainHead">ALLAN JOHNSON</div>
-            <div class="font">Personal Life Coach</div>
+            <div class="mainHead">AYYAPPA TECH</div>
+            <div class="font">SOLUTIONS</div>
         </div>
         <div class="mainDiv flexChild">
             <ul class="navBar">
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#" onclick="return false;" onmousedown="autoScrollTo('#contact');">Contact</a></li>
                 <!--<li><a href="#">Blog</a></li>-->
                 <li><a href="#services">Services</a></li>
                 <li><a href="#aboutme">About</a></li>
@@ -74,16 +77,16 @@
                 <div class="footFlexChild">
                     <div class="mainHead pad">CONTACT</div>
                     <div class="pad monoFont">
-                        <p><span>500 Terry Francois Street</span></p>
-                        <p><span>San Francisco, CA 94158</span></p>
+                        <p><span>Address Line1</span></p>
+                        <p><span>Address Line2</span></p>
                     </div>
                     <div class="pad monoFont">
-                        <p><span>Tel: </span></p>
+                        <p style="display:none"><span>Tel: </span></p>
                     </div>
                     <div class="pad monoFont">
-                        <p><span>Mobile: 123-456-7890</span></p>
+                        <p><span>Mobile: 744 850 0193</span></p>
                     </div>
-                    <a class="pad monoFont" href="mailto:info@ayyappacctv.com">info@ayyappacctv.com</a><br><br>
+                    <a class="pad monoFont" href="mailto:sara3hema@gmail.com">sara3hema@gmail.com</a><br><br>
                     <div class="pad">
                         <a href="http://www.facebook.com/"><img src="{% static 'images/fb.webp' %}" class="icon" alt="Facebook icon"></a>&nbsp;&nbsp;&nbsp;
                         <a href="http://www.twitter.com/"><img src="{% static 'images/twitter.webp' %}" class="icon" alt="Twitter icon"></a>&nbsp;&nbsp;&nbsp;
@@ -97,7 +100,6 @@
                       {% for field in form %}
                       {{field}}<br><br>
                       {% endfor %}
-
                       <div>
                         {% for message in messages %}
                           <div >
@@ -119,6 +121,8 @@
         </div><br>
         <div class="pad monoFont">©2023 by Ayyappa cctv Business.</div><br><br>
     </div>
-
+    <script src="http://code.jquery.com/jquery-2.1.3.min.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-localScroll/2.0.0/jquery.localScroll.min.js" charset="utf-8"></script>
 </body>
 </html>
