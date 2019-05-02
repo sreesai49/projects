@@ -78,12 +78,8 @@ WSGI_APPLICATION = 'cctv.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME':'cctv',
-        'USER':'sreesai',
-        'PASSWORD':'sreesai',
-        'HOST':'localhost',
-        'PORT':'3306',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
 
