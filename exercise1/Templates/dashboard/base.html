@@ -14,6 +14,7 @@
         padding:20px;
         color: white;
         text-decoration:None;
+        text-align: right;
       }
       div{
         border-style: solid;
@@ -32,8 +33,8 @@
   </head>
   <body>
     <div class="">
-      <a href="{% url 'registration:signin' %}">Login</a>
-      <a href="{% url 'registration:signup' %}">Register</a>
+      <a href="#">Settings</a>
+      <a href="#">Logout</a>
     </div>
     {% block body %}
     {% endblock %}

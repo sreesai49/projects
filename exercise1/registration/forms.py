@@ -15,3 +15,12 @@ class registerForm(forms.ModelForm):
     def __init__(self, *args, **kwargs):
         super(registerForm, self).__init__(*args, **kwargs)
         self.fields['email'].label = "Email ID"
+
+class loginForm(forms.ModelForm):
+    """docstring for loginForm."""
+    class Meta:
+        model = user_login
+        fields = ['username', 'password']
+        widgets = {
+            'password': forms.PasswordInput(),
+        }

@@ -2,7 +2,9 @@ from django.shortcuts import render
 from .models import *
 from .forms import *
 from django.contrib import messages
-from django.http import Http4
+from django.http import Http404
+from django.contrib.auth import login, logout, authenticate
+from django.db.models import Q
 # Create your views here.
 
 def home(request):
@@ -26,11 +28,33 @@ def register(request):
         elif form.cleaned_data['password'] != form.cleaned_data['confirm_password']:
             form.add_error('confirm_password', 'The passwords do not match')
         else:
-            raise Http4
+            raise Http404
 
     else:
         form = registerForm()
     return render(request, 'register.html', {"table_form": form.as_table()})
 
 def login(request):
-    pass
+    if request.method == 'POST':
+        form = loginForm(request.POST)
+        if form.is_valid():
+            username = form.cleaned_data['username']
+            password = form.cleaned_data['password']
+            try:
+                user = user_login.objects.get(Q(username=username) | Q(email=username))
+                try:
+                    print("Sreesai: Username is verified.")
+                    if password == user.password:
+                        active_user = authenticate(username = username, password = password)
+                        login(request, active_user)
+                        return render(request, 'dashbaord/home.html',{'user':user})
+                except Exception as e:
+                    form.add_error('password', 'Entered wrong password.')
+            except Exception as e:
+                form.add_error('password', 'User is not found.')
+        else:
+            raise Http404
+    else:
+        form = loginForm()
+
+    return render(request, 'login.html', {'form':form})
