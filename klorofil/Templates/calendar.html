@@ -1,0 +1,88 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block body %}
+<!-- Bootstrap stylesheet -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<!-- ClockPicker Stylesheet -->
+<link rel="stylesheet" type="text/css" href="{% static 'clockpicker/bootstrap-clockpicker.min.css' %}">
+<h1 style="text-align:center;">Calendar Event:</h1>
+<div id="calendar-form">
+  <form id="form_login" class="" action="{% url 'gcalendar:calendar'%}" method="post">
+    {% csrf_token %}
+    {{ form }}
+    <!-- <div class="input-group clockpicker" data-placement="right" data-align="top" data-autoclose="true">
+        <input type="text" class="form-control" value="09:32">
+        <span class="input-group-addon">
+            <span class="glyphicon glyphicon-time"></span>
+        </span>
+    </div> -->
+    <button type="submit" name="button">Add Event</button>
+  </form>
+</div>
+<br>
+<div class="g-events">
+  <h3>Upcoming Events:</h3>
+  <table class="table table-bordered">
+    <thead>
+      <th>Event Name</th>
+      <th>Starting Date</th>
+      <th>Update</th>
+      <th>delete</th>
+    </thead>
+    <tbody>
+      {% for event in events %}
+        <tr>
+          <td>{{event.0}}</td>
+          <td>{{event.1}}</td
+          <td></td>
+          <td><a href="{%url 'gcalendar:update_event' event.2 %}"><i class="fa fa-edit" style="font-size:24px"></i></a></td>
+          <td><a href="{% url 'gcalendar:delete_event' event.2 %}"><i class="fa fa-trash-o" style="font-size:24px"></i></a></td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+<style media="screen">
+  #calendar-form {
+     display: table;
+     width: 100%;
+     margin:0%;
+     padding:2% 31% 0% 0%;
+  }
+  #form_login {
+     display: table-cell;
+     text-align: center;
+     vertical-align: middle;
+  }
+  h1{
+    float:left;
+    padding: 6% 0% 0% 16%;
+  }
+  .clockpicker{
+    width: 20%;
+  }
+  .g-events{
+    padding-left: 16%;
+    width: 90%;
+  }
+  th, td{
+    text-align: center;
+  }
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+<!-- ClockPicker script -->
+<script type="text/javascript" src="{% static 'clockpicker/bootstrap-clockpicker.min.js' %}"></script>
+
+<script type="text/javascript">
+$('.clockpicker').clockpicker();
+
+</script>
+{% endblock %}
+
+
+{% block script %}
+
+{% endblock %}
