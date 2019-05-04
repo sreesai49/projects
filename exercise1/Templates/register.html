@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block page-style %}
+  form{
+    position:relative;
+    border-style: solid;
+    border-color: white;
+    width: 100%;
+padding: 25px 0px 30px 125px;
+margin: 250px 2px;
+box-sizing: border-box;
+  }
+  input{
+    margin: 20px 50px 0px 50px;
+  }
+  label{
+    color:white;
+  }
+{% endblock %}
+
+{% block body %}
+  <form class="" action="{% url 'registration:signup' %}" method="post">
+    {% csrf_token %}
+    {{ table_form }}
+
+    {% if messages %}
+    <ul class="messages">
+        {% for message in messages %}
+        <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+    <button type="submit" name="button">Register</button>
+  </form>
+{% endblock %}

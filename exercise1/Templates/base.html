@@ -1,0 +1,41 @@
+{%load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      body{
+        background-image:URL("{% static 'images/photo.jpeg'%}");
+        background-size: 100%;
+
+      }
+      div, a{
+        padding:20px;
+        color: white;
+        text-decoration:None;
+      }
+      div{
+        border-style: solid;
+        border-width: 10px;
+
+      }
+      a:hover{
+        color: pink;
+        font-weight: bold;
+      }
+    </style>
+    <style media="screen">
+      {% block page-style %}
+      {% endblock %}
+    </style>
+  </head>
+  <body>
+    <div class="">
+      <a href="#">Login</a>
+      <a href="{%url 'registration:signup'%}">Register</a>
+    </div>
+    {% block body %}
+    {% endblock %}
+  </body>
+</html>

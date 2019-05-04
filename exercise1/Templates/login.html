@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+
+{% block body %}
+<form class="" action="{% url 'registration:singin' %}" method="post">
+  {{form}}
+  {% if messages %}
+  <ul class="messages">
+      {% for message in messages %}
+      <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+      {% endfor %}
+  </ul>
+  {% endif %}
+  <button type="submit" name="button">Login</button>
+</form>
+{% endblock %}
