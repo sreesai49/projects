@@ -27,7 +27,7 @@ SECRET_KEY = '*baakjp1$zi7ui-^p_%c+pd=989+y5#_)bxluvfvo(006((onq'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['52.66.53.24','lokann.in']
+ALLOWED_HOSTS = ['52.66.53.24','lokann.in', 'localhost']
 
 
 # Application definition
