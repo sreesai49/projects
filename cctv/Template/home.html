@@ -34,21 +34,23 @@
         <div class="imgDiv">
             <div class="slider">
                 <div class="mySlides"></div>
-
+                <div class="mySlides"></div>
+                <div class="mySlides"></div>
+                <div class="mySlides"></div>
+                <div class="mySlides"></div>
+                <div class="mySlides"></div>
+                <div class="mySlides"></div>
+                <div class="mySlides"></div>
                 <div class="mySlides"></div>
 
-                <div class="mySlides">
-                    <img src="">
-                    <img src="{%static 'images/gallery/Access door.jpg'%}">
-                </div>
                 <a class="prev" value=-1>&#10094;</a>
                 <a class="next" value=1>&#10095;</a>
 
-                <div style="text-align:center">
+                <!-- <div style="text-align:center">
                     <span class="dot" value=1></span>
                     <span class="dot" value=2></span>
                     <span class="dot" value=3></span>
-                </div>
+                </div> -->
                 <div class="slideText">
 
                     <div class="success">SUCCESS</div><br>
@@ -112,12 +114,12 @@
                             <p><span><i class="fa fa-phone">Mobile: +91 95001 41096</i></span></p>
                         </div>
                     </div>
-                    
+
                     <div class="pad monoFont">
                         <p style="display:none"><span>Tel: </span></p>
                     </div>
                     <div class="pad monoFont">
-                        
+
                     </div>
                     <a class="pad monoFont" href="mailto:sara3hema@gmail.com"><img src="{%static 'images/Gmail.png'%}" class="gmail">sara3hema@gmail.com</a><br><br>
                     <div class="pad">
@@ -167,5 +169,74 @@
     <script src="http://code.jquery.com/jquery-2.1.3.min.js" charset="utf-8"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js" charset="utf-8"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-localScroll/2.0.0/jquery.localScroll.min.js" charset="utf-8"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function () {
+            var slideIndex = 1;
+            var slider = $(".slider");
+            var slides = $(".mySlides");
+            var interval;
+
+            function showSlides() {
+
+                interval = setInterval(function () {
+                    if (slideIndex > slides.length) { slideIndex = 1 }
+                    if (slideIndex < 1) { slideIndex = slides.length }
+
+                    slides.each(function () {
+                        this.style.display = 'none';
+                    });
+                    var URL = '{% static 'images/gallery/image' %}' + slideIndex + '.jpg';
+                    if(slideIndex==5 || slideIndex==6 || slideIndex==7){
+                      URL = '{% static 'images/gallery/image' %}' + slideIndex + '.png';
+                    }
+                    slider.css("backgroundImage", "url(" + URL + ")");
+
+                    slides.get(slideIndex - 1).style.display = 'block';
+                    slideIndex++;
+                }, 1500);
+            }
+            function stopSlides() {
+                clearInterval(interval);
+            }
+            slider.on('mouseenter', stopSlides).on('mouseleave', showSlides);
+
+            showSlides();
+            function clickArrow() {
+                if (slideIndex > slides.length) { slideIndex = 1 }
+                if (slideIndex < 1) { slideIndex = slides.length }
+
+                slides.each(function () {
+                    this.style.display = 'none';
+                });
+                var URL = '{% static 'images/gallery/image' %}' + slideIndex + '.jpg';
+                if(slideIndex==5 || slideIndex==6 || slideIndex==7){
+                  URL = '{% static 'images/gallery/image' %}' + slideIndex + '.png';
+                }
+                slider.css("backgroundImage", "url(" + URL + ")");
+                slides.get(slideIndex - 1).style.display = 'block';
+                //slideIndex++;
+            }
+            $('.prev').click(function () {
+                var n = $(this).attr('value');
+                slideIndex = slideIndex + parseInt(n);
+                clickArrow();
+            });
+
+            $('.next').click(function () {
+                var n = $(this).attr('value');
+                slideIndex = slideIndex + parseInt(n);
+                clickArrow();
+            });
+
+            $('.dot').click(function () {
+                slideIndex = $(this).attr('value');
+                clickArrow();
+            });
+        });
+
+    </script>
 </body>
 </html>
