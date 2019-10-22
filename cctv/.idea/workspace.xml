@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b69ec23b-8ec8-4943-9d8e-2f778ae263f6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Static/css/homeSlider.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Static/css/camStyles.css" beforeDir="false" afterPath="$PROJECT_DIR$/Static/css/camStyles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Template/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/Template/home.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

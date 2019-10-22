@@ -456,7 +456,6 @@ form{
     display: inline-block;
     }
 
-    .active,
     .dot:hover {
     background-color: #717171;
     }
