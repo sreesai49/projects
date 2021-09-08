@@ -38,7 +38,7 @@ pathspec==0.5.5
 patterns==0.3
 pbr==5.1.2
 phonenumbers==8.10.3
-Pillow==5.4.1
+Pillow==8.3.2
 protobuf==3.6.1
 pyasn1==0.4.4
 pyasn1-modules==0.2.2
