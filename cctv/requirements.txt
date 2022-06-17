@@ -51,7 +51,7 @@ python-docx==0.8.10
 pytz==2018.7
 PyYAML==3.13
 queuelib==1.5.0
-Scrapy==1.5.1
+Scrapy==2.6.1
 semantic-version==2.5.0
 service-identity==18.1.0
 six==1.11.0
